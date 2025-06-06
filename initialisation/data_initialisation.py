@@ -1,6 +1,6 @@
 # run_both.py
 import subprocess
-from initialisation.upload_csv_into_database import FCADataInserter
+from upload_csv_into_database import FCADataInserter
 
 # delete file if it exists
 import os
@@ -8,7 +8,7 @@ import os
 db_path = "datasets/SQLite_database/fca_library.db"
 if os.path.exists(db_path):
 	os.remove(db_path)
-subprocess.run(["python", "db_cleaning/create_books_db.py"])
+subprocess.run(["python", "initialisation/create_tables_db.py"])
 inserter = FCADataInserter()
 inserter.insert_books()
 inserter.insert_library_members()
