@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FCA Library – Book Search & Wishlist</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    h2 { margin-top: 40px; }
+    .book-item { margin: 5px 0; }
+    button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>FCA Library Book Search</h1>
+
+  <div>
+    <label>Author:</label>
+    <input type="text" id="author-input" placeholder="e.g. Jane Austen"><br><br>
+
+    <label>Title:</label>
+    <input type="text" id="title-input" placeholder="e.g. Emma"><br><br>
+
+    <button onclick="searchBooks()">Search</button>
+  </div>
+
+  <h2>Search Results</h2>
+  <div id="search-results"></div>
+
+  <h2>Your Wishlist</h2>
+  <div id="wishlist-section"></div>
+
+  <script>
+    const userId = localStorage.getItem("user_id");
+    if (!userId) {
+      alert("Please log in first.");
+      window.location.href = "login.html";
+    }
+
+    async function searchBooks() {
+    const authorsRaw = document.getElementById("author-input").value;
+    const titlesRaw = document.getElementById("title-input").value;
+
+    const authors = authorsRaw.includes(",")
+        ? authorsRaw.split(",").map(s => s.trim())
+        : authorsRaw.trim();
+
+    const book_names = titlesRaw.includes(",")
+        ? titlesRaw.split(",").map(s => s.trim())
+        : titlesRaw.trim();
+
+    const payload = { authors, book_names };
+    console.log(payload);  // Optional: check formatting
+
+    const response = await fetch("http://localhost:8000/books_availability", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+    });
+
+      const resultsDiv = document.getElementById("search-results");
+      resultsDiv.innerHTML = "";
+
+      if (!response.ok) {
+        const err = await response.json();
+        resultsDiv.innerText = "Error: " + err.detail;
+        return;
+      }
+
+      const data = await response.json();
+
+      if (data.available_books.length === 0 && data.unavailable_books.length === 0) {
+        resultsDiv.innerText = "No books found.";
+        return;
+      }
+
+      if (data.available_books.length > 0) {
+        resultsDiv.innerHTML += "<strong>Available:</strong><ul>" +
+          data.available_books.map(book => `<li class="book-item">📗 ${book}</li>`).join("") +
+          "</ul>";
+      }
+
+      if (data.unavailable_books.length > 0) {
+        resultsDiv.innerHTML += "<strong>Unavailable (add to wishlist):</strong><ul>" +
+          data.unavailable_books.map(book => `
+            <li class="book-item">
+              📕 ${book}
+              <button onclick="updateWishlist('${book}', 'add')">Add to Wishlist</button>
+            </li>
+          `).join("") +
+          "</ul>";
+      }
+    }
+
+    async function loadWishlist() {
+      const res = await fetch(`http://localhost:8000/wishlist?user_id=${userId}`);
+      const data = await res.json();
+      const wishlistDiv = document.getElementById("wishlist-section");
+      wishlistDiv.innerHTML = "";
+
+      if (data.wishlist.length === 0) {
+        wishlistDiv.innerText = "No books in wishlist.";
+        return;
+      }
+
+      wishlistDiv.innerHTML = "<ul>" + data.wishlist.map(book => `
+        <li class="book-item">
+          ${book}
+          <button onclick="updateWishlist('${book}', 'remove')">Remove</button>
+        </li>
+      `).join("") + "</ul>";
+    }
+
+    async function updateWishlist(bookTitle, action) {
+      const res = await fetch(`http://localhost:8000/wishlist?user_id=${userId}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ book_titles: bookTitle, action })
+      });
+
+      if (!res.ok) {
+        const err = await res.json();
+        alert("Error: " + err.detail);
+      } else {
+        loadWishlist();  // Refresh wishlist after change
+      }
+    }
+
+    // Load wishlist on page load
+    loadWishlist();
+  </script>
+
+</body>
+</html>

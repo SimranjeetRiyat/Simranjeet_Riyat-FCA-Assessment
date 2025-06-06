@@ -1,0 +1,49 @@
+id,book_id,book_title,user_id,user_email,date_added_to_wishlist
+1,34,The Fellowship of the Ring,22,tina.clark@fca_user.com,2025-04-05
+2,34,The Fellowship of the Ring,21,sam.richards@fca_user.com,2025-04-05
+3,1934,Little Women,21,sam.richards@fca_user.com,2025-04-06
+4,320,Cien años de soledad,20,rachel.hughes@fca_user.com,2025-04-07
+5,2,Harry Potter and the Order of the Phoenix,5,clara.jones@fca_user.com,2025-04-07
+6,1934,Little Women,16,nathan.green@fca_user.com,2025-04-07
+7,34,The Fellowship of the Ring,8,fred.hall@fca_user.com,2025-04-08
+8,2956,The Adventures of Huckleberry Finn,14,liam.king@fca_user.com,2025-04-10
+9,968,The Da Vinci Code,8,fred.hall@fca_user.com,2025-04-10
+10,2956,The Adventures of Huckleberry Finn,16,nathan.green@fca_user.com,2025-04-11
+11,960,Angels & Demons,12,jack.turner@fca_user.com,2025-04-13
+12,320,Cien años de soledad,19,quinn.baker@fca_user.com,2025-04-13
+13,1618,The Curious Incident of the Dog in the Night-Time,20,rachel.hughes@fca_user.com,2025-04-13
+14,320,Cien años de soledad,18,peter.campbell@fca_user.com,2025-04-14
+15,1202,Freakonomics: A Rogue Economist Explores the Hidden Side of Everything,17,olivia.adams@fca_user.com,2025-04-16
+16,34,The Fellowship of the Ring,13,kara.wright@fca_user.com,2025-04-21
+17,320,Cien años de soledad,19,quinn.baker@fca_user.com,2025-04-22
+18,1618,The Curious Incident of the Dog in the Night-Time,8,fred.hall@fca_user.com,2025-04-26
+19,1934,Little Women,15,mia.scott@fca_user.com,2025-04-30
+20,890,Of Mice and Men,5,clara.jones@fca_user.com,2025-05-01
+21,1934,Little Women,22,tina.clark@fca_user.com,2025-05-02
+22,6,Harry Potter and the Goblet of Fire,7,eva.martin@fca_user.com,2025-05-04
+23,890,Of Mice and Men,16,nathan.green@fca_user.com,2025-05-04
+24,890,Of Mice and Men,8,fred.hall@fca_user.com,2025-05-05
+25,2956,The Adventures of Huckleberry Finn,15,mia.scott@fca_user.com,2025-05-06
+26,2956,The Adventures of Huckleberry Finn,17,olivia.adams@fca_user.com,2025-05-07
+27,960,Angels & Demons,5,clara.jones@fca_user.com,2025-05-08
+28,960,Angels & Demons,15,mia.scott@fca_user.com,2025-05-09
+29,320,Cien años de soledad,9,grace.lee@fca_user.com,2025-05-10
+30,2,Harry Potter and the Order of the Phoenix,13,kara.wright@fca_user.com,2025-05-10
+31,1618,The Curious Incident of the Dog in the Night-Time,18,peter.campbell@fca_user.com,2025-05-10
+32,2,Harry Potter and the Order of the Phoenix,4,ben.smith@fca_user.com,2025-05-13
+33,1934,Little Women,3,alice.brown@fca_user.com,2025-05-15
+34,34,The Fellowship of the Ring,9,grace.lee@fca_user.com,2025-05-18
+35,2,Harry Potter and the Order of the Phoenix,6,daniel.evans@fca_user.com,2025-05-19
+36,2956,The Adventures of Huckleberry Finn,6,daniel.evans@fca_user.com,2025-05-20
+37,320,Cien años de soledad,18,peter.campbell@fca_user.com,2025-05-22
+38,2956,The Adventures of Huckleberry Finn,22,tina.clark@fca_user.com,2025-05-22
+39,320,Cien años de soledad,7,eva.martin@fca_user.com,2025-05-23
+40,2,Harry Potter and the Order of the Phoenix,16,nathan.green@fca_user.com,2025-05-24
+41,1202,Freakonomics: A Rogue Economist Explores the Hidden Side of Everything,11,isabel.moore@fca_user.com,2025-05-25
+42,968,The Da Vinci Code,17,olivia.adams@fca_user.com,2025-05-28
+43,968,The Da Vinci Code,11,isabel.moore@fca_user.com,2025-05-29
+44,890,Of Mice and Men,20,rachel.hughes@fca_user.com,2025-05-30
+45,320,Cien años de soledad,10,henry.kim@fca_user.com,2025-05-31
+46,1934,Little Women,5,clara.jones@fca_user.com,2025-05-31
+47,1618,The Curious Incident of the Dog in the Night-Time,6,daniel.evans@fca_user.com,2025-05-31
+48,960,Angels & Demons,19,quinn.baker@fca_user.com,2025-06-02

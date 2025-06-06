@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FCA Library – Librarian Console</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+    h2 { margin-top: 30px; }
+    .book-entry { margin: 5px 0; }
+    input { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+
+<h1>FCA Library – Librarian Console</h1>
+
+<h2>Rental Report</h2>
+<button onclick="loadRentalReport()">Generate Report</button>
+<div id="rental-report"></div>
+
+<h2>Change Book Status</h2>
+<input type="text" id="book-title" placeholder="Enter book title">
+<button onclick="checkStatus()">Check Status</button>
+
+<div id="status-section" style="margin-top:20px;"></div>
+
+<script>
+  const userId = parseInt(localStorage.getItem("user_id"), 10);
+  if (!userId || userId >= 3) {
+    alert("Access denied. This page is for library staff only.");
+    window.location.href = "login.html";
+  }
+
+  async function loadRentalReport() {
+    const res = await fetch("http://localhost:8000/library_report");
+    const data = await res.json();
+    const div = document.getElementById("rental-report");
+    div.innerHTML = "";
+
+    if (Object.keys(data).length === 0) {
+      div.innerText = "No books currently rented.";
+      return;
+    }
+
+    let html = `
+      <table border="1" cellpadding="5">
+        <tr>
+          <th>Book Title</th>
+          <th>User ID</th>
+          <th>Email</th>
+          <th>Borrowed Date</th>
+          <th>Days Borrowed</th>
+          <th>Days Overdue</th>
+        </tr>
+    `;
+
+    for (const [title, info] of Object.entries(data)) {
+      html += `
+        <tr>
+          <td>${title}</td>
+          <td>${info.user_id}</td>
+          <td>${info.user_email}</td>
+          <td>${info.borrowed_date}</td>
+          <td>${info.days_borrowed}</td>
+          <td>${info.days_overdue}</td>
+        </tr>
+      `;
+    }
+
+    html += "</table>";
+    div.innerHTML = html;
+  }
+
+  async function checkStatus() {
+    const bookTitle = document.getElementById("book-title").value.trim();
+    if (!bookTitle) return alert("Please enter a book title");
+
+    const res = await fetch("http://localhost:8000/rental_status");
+    const data = await res.json();
+    const rentedBooks = data.rented_books || [];
+
+    const isBorrowed = rentedBooks.includes(bookTitle);
+    const div = document.getElementById("status-section");
+
+    let extraInput = "";
+    if (!isBorrowed) {
+      extraInput = `
+        <label>User Email (to log borrow):</label><br>
+        <input type="email" id="borrower-email" placeholder="user@example.com"><br><br>
+      `;
+    }
+
+    div.innerHTML = `
+      <p><strong>${bookTitle}</strong> is currently <strong>${isBorrowed ? "borrowed" : "available"}</strong>.</p>
+      ${extraInput}
+      <button onclick="updateStatus('${bookTitle}', ${!isBorrowed})">
+        Mark as ${isBorrowed ? "Returned" : "Borrowed"}
+      </button>
+    `;
+  }
+
+  async function updateStatus(title, toBorrow) {
+    const endpoint = toBorrow ? "book_borrow" : "book_return";
+    const url = `http://localhost:8000/${endpoint}?user_id=${userId}`;
+
+    let payload = { book_title: title };
+
+    if (toBorrow) {
+      const emailInput = document.getElementById("borrower-email");
+      if (!emailInput || !emailInput.value.trim()) {
+        alert("Borrower email is required to borrow the book.");
+        return;
+      }
+      payload.user_email = emailInput.value.trim();
+    }
+
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+    alert(data.message || "Action completed");
+
+    if (data.notified_users) {
+      const emails = data.notified_users.join(", ");
+      alert(`Users notified:\n${emails}`);
+    }
+
+    checkStatus();       // Refresh book status
+    loadRentalReport();  // Refresh report
+  }
+
+  // Initial load
+  loadRentalReport();
+</script>
+
+</body>
+</html>

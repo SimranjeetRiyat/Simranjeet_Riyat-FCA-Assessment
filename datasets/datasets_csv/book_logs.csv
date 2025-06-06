@@ -1,0 +1,93 @@
+id,book_id,book_title,user_id,user_email,borrowed_date,returned,date_returned,days_borrowed,overdue,days_overdue
+1,10210,Jane Eyre,4,ben.smith@fca_user.com,2025-03-08,FALSE,,89,TRUE,68
+2,136251,Harry Potter and the Deathly Hallows,8,fred.hall@fca_user.com,2025-03-11,TRUE,2025-03-30,19,FALSE,
+3,19288043,Gone Girl,15,mia.scott@fca_user.com,2025-03-11,TRUE,2025-05-29,79,FALSE,
+4,5129,Brave New World,5,clara.jones@fca_user.com,2025-03-11,TRUE,2025-04-29,49,FALSE,
+5,15931,The Notebook,8,fred.hall@fca_user.com,2025-03-11,TRUE,2025-05-29,79,FALSE,
+6,5060378,Flickan som lekte med elden,20,rachel.hughes@fca_user.com,2025-03-12,TRUE,2025-04-19,38,FALSE,
+7,1202,Freakonomics: A Rogue Economist Explores the Hidden Side of Everything,4,ben.smith@fca_user.com,2025-03-12,TRUE,2025-04-22,41,FALSE,
+8,18405,Gone with the Wind,8,fred.hall@fca_user.com,2025-03-12,TRUE,2025-04-18,37,FALSE,
+9,12232938,The Lovely Bones,3,alice.brown@fca_user.com,2025-03-13,FALSE,,84,TRUE,63
+10,21787,The Princess Bride,14,liam.king@fca_user.com,2025-03-15,FALSE,,82,TRUE,61
+11,5,Harry Potter and the Prisoner of Azkaban,11,isabel.moore@fca_user.com,2025-03-15,TRUE,2025-05-05,51,FALSE,
+12,10818853,Fifty Shades of Grey,16,nathan.green@fca_user.com,2025-03-15,TRUE,2025-05-12,58,FALSE,
+13,21787,The Princess Bride,5,clara.jones@fca_user.com,2025-03-16,TRUE,2025-04-23,38,FALSE,
+14,1885,Pride and Prejudice,16,nathan.green@fca_user.com,2025-03-16,TRUE,2025-04-06,21,FALSE,
+15,30119,Where the Sidewalk Ends: The Poems and Drawings of Shel Silverstein,4,ben.smith@fca_user.com,2025-03-19,FALSE,,78,TRUE,57
+16,6,Harry Potter and the Goblet of Fire,12,jack.turner@fca_user.com,2025-03-19,FALSE,,78,TRUE,57
+17,2,Harry Potter and the Order of the Phoenix,14,liam.king@fca_user.com,2025-03-19,FALSE,,78,TRUE,57
+18,7260188,Mockingjay,17,olivia.adams@fca_user.com,2025-03-20,FALSE,,77,TRUE,56
+19,19063,The Book Thief,19,quinn.baker@fca_user.com,2025-03-22,TRUE,2025-05-21,60,FALSE,
+20,1845,Into the Wild,5,clara.jones@fca_user.com,2025-03-23,TRUE,2025-05-23,61,FALSE,
+21,7624,Lord of the Flies,7,eva.martin@fca_user.com,2025-03-24,FALSE,,73,TRUE,52
+22,14935,Sense and Sensibility,15,mia.scott@fca_user.com,2025-03-25,TRUE,2025-05-27,63,FALSE,
+23,3,Harry Potter and the Philosopher's Stone,10,henry.kim@fca_user.com,2025-03-27,TRUE,2025-04-24,28,FALSE,
+24,386162,The Hitchhiker's Guide to the Galaxy,12,jack.turner@fca_user.com,2025-03-27,TRUE,2025-04-13,17,FALSE,
+25,21787,The Princess Bride,4,ben.smith@fca_user.com,2025-03-29,TRUE,2025-05-19,51,FALSE,
+26,38709,Holes,21,sam.richards@fca_user.com,2025-03-30,TRUE,2025-04-15,16,FALSE,
+27,15881,Harry Potter and the Chamber of Secrets,8,fred.hall@fca_user.com,2025-04-01,TRUE,2025-04-18,17,FALSE,
+28,15931,The Notebook,19,quinn.baker@fca_user.com,2025-04-01,TRUE,2025-04-07,6,FALSE,
+29,13335037,Divergent,15,mia.scott@fca_user.com,2025-04-01,TRUE,2025-05-28,57,FALSE,
+30,11857408,Fifty Shades Darker,12,jack.turner@fca_user.com,2025-04-03,TRUE,2025-05-17,44,FALSE,
+31,1,Harry Potter and the Half-Blood Prince,21,sam.richards@fca_user.com,2025-04-05,FALSE,,61,TRUE,40
+32,6185,Wuthering Heights,17,olivia.adams@fca_user.com,2025-04-06,FALSE,,60,TRUE,39
+33,21787,The Princess Bride,19,quinn.baker@fca_user.com,2025-04-06,TRUE,2025-04-22,16,FALSE,
+34,428263,Eclipse,16,nathan.green@fca_user.com,2025-04-07,TRUE,2025-05-31,54,FALSE,
+35,5,Harry Potter and the Prisoner of Azkaban,5,clara.jones@fca_user.com,2025-04-09,TRUE,2025-05-26,47,FALSE,
+36,428263,Eclipse,8,fred.hall@fca_user.com,2025-04-10,FALSE,,56,TRUE,35
+37,5470,Nineteen Eighty-Four,4,ben.smith@fca_user.com,2025-04-10,FALSE,,56,TRUE,35
+38,2767052,The Hunger Games,3,alice.brown@fca_user.com,2025-04-11,TRUE,2025-05-02,21,FALSE,
+39,386162,The Hitchhiker's Guide to the Galaxy,20,rachel.hughes@fca_user.com,2025-04-11,FALSE,,55,TRUE,34
+40,136251,Harry Potter and the Deathly Hallows,11,isabel.moore@fca_user.com,2025-04-12,FALSE,,54,TRUE,33
+41,22628,The Perks of Being a Wallflower,14,liam.king@fca_user.com,2025-04-12,TRUE,2025-05-30,48,FALSE,
+42,13335037,Divergent,15,mia.scott@fca_user.com,2025-04-12,TRUE,2025-05-12,30,FALSE,
+43,6148028,Catching Fire,22,tina.clark@fca_user.com,2025-04-13,FALSE,,53,TRUE,32
+44,5907,The Hobbit or There and Back Again,3,alice.brown@fca_user.com,2025-04-14,TRUE,2025-04-16,2,FALSE,
+45,10818853,Fifty Shades of Grey,21,sam.richards@fca_user.com,2025-04-14,FALSE,,52,TRUE,31
+46,968,The Da Vinci Code,12,jack.turner@fca_user.com,2025-04-14,TRUE,2025-04-19,5,FALSE,
+47,113436,Eragon,4,ben.smith@fca_user.com,2025-04-15,TRUE,2025-05-31,46,FALSE,
+48,5297,The Picture of Dorian Gray,21,sam.richards@fca_user.com,2025-04-15,TRUE,2025-05-03,18,FALSE,
+49,6186357,The Maze Runner,11,isabel.moore@fca_user.com,2025-04-16,FALSE,,50,TRUE,29
+50,5,Harry Potter and the Prisoner of Azkaban,8,fred.hall@fca_user.com,2025-04-19,TRUE,2025-05-16,27,FALSE,
+51,960,Angels & Demons,18,peter.campbell@fca_user.com,2025-04-19,FALSE,,47,TRUE,26
+52,41865,Twilight,22,tina.clark@fca_user.com,2025-04-19,TRUE,2025-05-01,12,FALSE,
+53,7445,The Glass Castle,17,olivia.adams@fca_user.com,2025-04-19,TRUE,2025-05-01,12,FALSE,
+54,13496,A Game of Thrones,9,grace.lee@fca_user.com,2025-04-20,TRUE,2025-05-18,28,FALSE,
+55,19501,"Eat, pray, love: one woman's search for everything across Italy, India and Indonesia",22,tina.clark@fca_user.com,2025-04-21,TRUE,2025-05-07,16,FALSE,
+56,1202,Freakonomics: A Rogue Economist Explores the Hidden Side of Everything,17,olivia.adams@fca_user.com,2025-04-22,TRUE,2025-05-31,39,FALSE,
+57,5107,The Catcher in the Rye,16,nathan.green@fca_user.com,2025-04-23,FALSE,,43,TRUE,22
+58,2657,To Kill a Mockingbird,13,kara.wright@fca_user.com,2025-04-24,TRUE,2025-05-10,16,FALSE,
+59,128029,A Thousand Splendid Suns,22,tina.clark@fca_user.com,2025-04-24,FALSE,,42,TRUE,21
+60,1885,Pride and Prejudice,22,tina.clark@fca_user.com,2025-04-25,TRUE,2025-06-03,39,FALSE,
+61,34,The Fellowship of the Ring,20,rachel.hughes@fca_user.com,2025-04-26,FALSE,,40,TRUE,19
+62,38709,Holes,20,rachel.hughes@fca_user.com,2025-04-27,TRUE,2025-05-27,30,FALSE,
+63,890,Of Mice and Men,19,quinn.baker@fca_user.com,2025-05-01,TRUE,2025-05-16,15,FALSE,
+64,77203,The Kite Runner,12,jack.turner@fca_user.com,2025-05-01,FALSE,,35,TRUE,14
+65,960,Angels & Demons,21,sam.richards@fca_user.com,2025-05-01,TRUE,2025-05-11,10,FALSE,
+66,15931,The Notebook,15,mia.scott@fca_user.com,2025-05-02,FALSE,,34,TRUE,13
+67,3,Harry Potter and the Philosopher's Stone,20,rachel.hughes@fca_user.com,2025-05-06,FALSE,,30,TRUE,9
+68,19501,"Eat, pray, love: one woman's search for everything across Italy, India and Indonesia",7,eva.martin@fca_user.com,2025-05-06,TRUE,2025-05-18,12,FALSE,
+69,2998,The Secret Garden,5,clara.jones@fca_user.com,2025-05-07,TRUE,2025-05-18,11,FALSE,
+70,11857408,Fifty Shades Darker,8,fred.hall@fca_user.com,2025-05-07,TRUE,2025-06-01,25,FALSE,
+71,11857408,Fifty Shades Darker,15,mia.scott@fca_user.com,2025-05-08,TRUE,2025-05-24,16,FALSE,
+72,11735983,Insurgent,9,grace.lee@fca_user.com,2025-05-09,FALSE,,27,TRUE,6
+73,1617,Un di Velt Hot Geshvign,12,jack.turner@fca_user.com,2025-05-10,TRUE,2025-05-27,17,FALSE,
+74,929,Memoirs of a Geisha,13,kara.wright@fca_user.com,2025-05-14,FALSE,,22,TRUE,1
+75,7445,The Glass Castle,13,kara.wright@fca_user.com,2025-05-14,TRUE,2025-05-26,12,FALSE,
+76,5129,Brave New World,15,mia.scott@fca_user.com,2025-05-14,TRUE,2025-05-27,13,FALSE,
+77,13536860,Fifty Shades Freed,4,ben.smith@fca_user.com,2025-05-15,TRUE,2025-05-15,0,FALSE,
+78,1845,Into the Wild,21,sam.richards@fca_user.com,2025-05-16,FALSE,,20,FALSE,
+79,11857408,Fifty Shades Darker,20,rachel.hughes@fca_user.com,2025-05-16,FALSE,,20,FALSE,
+80,5129,Brave New World,19,quinn.baker@fca_user.com,2025-05-18,TRUE,2025-05-28,10,FALSE,
+81,37435,The Secret Life of Bees,19,quinn.baker@fca_user.com,2025-05-19,TRUE,2025-05-21,2,FALSE,
+82,11588,The Shining,10,henry.kim@fca_user.com,2025-05-20,FALSE,,16,FALSE,
+83,4381,Fahrenheit 451,4,ben.smith@fca_user.com,2025-05-20,FALSE,,16,FALSE,
+84,19501,"Eat, pray, love: one woman's search for everything across Italy, India and Indonesia",21,sam.richards@fca_user.com,2025-05-21,FALSE,,15,FALSE,
+85,7445,The Glass Castle,14,liam.king@fca_user.com,2025-05-23,TRUE,2025-05-31,8,FALSE,
+86,11870085,The Fault in Our Stars,7,eva.martin@fca_user.com,2025-05-25,TRUE,2025-06-02,8,FALSE,
+87,968,The Da Vinci Code,14,liam.king@fca_user.com,2025-05-25,FALSE,,11,FALSE,
+88,19288043,Gone Girl,22,tina.clark@fca_user.com,2025-05-27,FALSE,,9,FALSE,
+89,1617,Un di Velt Hot Geshvign,4,ben.smith@fca_user.com,2025-05-27,FALSE,,9,FALSE,
+90,19063,The Book Thief,10,henry.kim@fca_user.com,2025-05-28,FALSE,,8,FALSE,
+91,37435,The Secret Life of Bees,4,ben.smith@fca_user.com,2025-05-28,TRUE,2025-05-30,2,FALSE,
+92,2998,The Secret Garden,5,clara.jones@fca_user.com,2025-05-29,FALSE,,7,FALSE,

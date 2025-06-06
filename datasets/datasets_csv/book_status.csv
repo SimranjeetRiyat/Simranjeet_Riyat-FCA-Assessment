@@ -1,0 +1,100 @@
+book_id,book_title,borrowed
+1,Harry Potter and the Half-Blood Prince,FALSE
+2,Harry Potter and the Order of the Phoenix,TRUE
+3,Harry Potter and the Philosopher's Stone,FALSE
+5,Harry Potter and the Prisoner of Azkaban,FALSE
+6,Harry Potter and the Goblet of Fire,TRUE
+34,The Fellowship of the Ring,TRUE
+320,Cien años de soledad,TRUE
+865,O Alquimista,FALSE
+890,Of Mice and Men,TRUE
+929,Memoirs of a Geisha,FALSE
+960,Angels & Demons,TRUE
+968,The Da Vinci Code,TRUE
+1202,Freakonomics: A Rogue Economist Explores the Hidden Side of Everything,TRUE
+1381,Ὀδύσσεια,FALSE
+1617,Un di Velt Hot Geshvign,FALSE
+1618,The Curious Incident of the Dog in the Night-Time,TRUE
+1845,Into the Wild,FALSE
+1885,Pride and Prejudice,FALSE
+1934,Little Women,TRUE
+1953,A Tale of Two Cities,FALSE
+2657,To Kill a Mockingbird,FALSE
+2956,The Adventures of Huckleberry Finn,TRUE
+2998,The Secret Garden,TRUE
+3636,The Giver,TRUE
+4214,Life of Pi,TRUE
+4381,Fahrenheit 451,FALSE
+4671,The Great Gatsby,FALSE
+4981,"Slaughterhouse-Five, or The Children's Crusade: A Duty-Dance with Death ",FALSE
+5107,The Catcher in the Rye,FALSE
+5129,Brave New World,FALSE
+5139,The Devil Wears Prada,FALSE
+5297,The Picture of Dorian Gray,FALSE
+5470,Nineteen Eighty-Four,TRUE
+5907,The Hobbit or There and Back Again,FALSE
+6185,Wuthering Heights,FALSE
+7445,The Glass Castle,FALSE
+7613,Animal Farm: A Fairy Story,FALSE
+7624,Lord of the Flies,TRUE
+10210,Jane Eyre,TRUE
+10917,My Sister's Keeper,FALSE
+11588,The Shining,TRUE
+13496,A Game of Thrones,TRUE
+14935,Sense and Sensibility,FALSE
+15881,Harry Potter and the Chamber of Secrets,FALSE
+15931,The Notebook,FALSE
+17245,Dracula,FALSE
+18135,An Excellent conceited Tragedie of Romeo and Juliet,FALSE
+18405,Gone with the Wind,FALSE
+18490,"Frankenstein; or, The Modern Prometheus",TRUE
+19063,The Book Thief,FALSE
+19501,"Eat, pray, love: one woman's search for everything across Italy, India and Indonesia",FALSE
+21787,The Princess Bride,FALSE
+22628,The Perks of Being a Wallflower,TRUE
+24178,Charlotte's Web,TRUE
+28187,The Lightning Thief,FALSE
+30119,Where the Sidewalk Ends: The Poems and Drawings of Shel Silverstein,FALSE
+32542,A Time to Kill,TRUE
+37435,The Secret Life of Bees,FALSE
+38709,Holes,FALSE
+41865,Twilight,FALSE
+43641,Water for Elephants,FALSE
+48855,Het Achterhuis: Dagboekbrieven 14 juni 1942 - 1 augustus 1944,FALSE
+49041,"New Moon (Twilight, #2)",FALSE
+77203,The Kite Runner,FALSE
+99561,Looking for Alaska,FALSE
+100915,"The Lion, the Witch and the Wardrobe",FALSE
+113436,Eragon,TRUE
+119322,Northern Lights,TRUE
+128029,A Thousand Splendid Suns,FALSE
+136251,Harry Potter and the Deathly Hallows,FALSE
+157993,Le Petit Prince,FALSE
+227443,,FALSE
+231804,The Outsiders,TRUE
+256683,City of Bones,FALSE
+370493,The Giving Tree,FALSE
+375802,Ender's Game,TRUE
+386162,The Hitchhiker's Guide to the Galaxy,TRUE
+428263,Eclipse,FALSE
+1162543,Breaking Dawn,FALSE
+1656001,The Host,FALSE
+2429135,Män som hatar kvinnor,FALSE
+2767052,The Hunger Games,TRUE
+4667024,The Help,TRUE
+5060378,Flickan som lekte med elden,TRUE
+6148028,Catching Fire,TRUE
+6186357,The Maze Runner,FALSE
+6424171,Jurassic Park,FALSE
+6442769,Paper Towns,FALSE
+7260188,Mockingjay,TRUE
+10818853,Fifty Shades of Grey,FALSE
+11735983,Insurgent,FALSE
+11857408,Fifty Shades Darker,TRUE
+11870085,The Fault in Our Stars,FALSE
+12232938,The Lovely Bones,TRUE
+13335037,Divergent,FALSE
+13536860,Fifty Shades Freed,TRUE
+18619684,The Time Traveler's Wife,TRUE
+19288043,Gone Girl,FALSE
+22557272,The Girl on the Train,TRUE
